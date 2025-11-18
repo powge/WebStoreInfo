@@ -1,0 +1,145 @@
+body {
+    background: #f3f1f1;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.product-card {
+    width: 650px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+.image-section img {
+  
+ width: 400px;   /* zvogloje si të duash: 100, 150, 300... */
+  height: auto;
+    object-fit: cover;
+    display: block;
+  margin: 0 auto;
+}
+
+.content {
+    padding: 28px 34px;
+}
+
+.product-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1c2b4f;
+    line-height: 1.1;
+}
+
+.product-title span {
+    color: #d98b00;
+}
+
+.model {
+    margin-top: 6px;
+    font-weight: 600;
+    background: #1c2b4f;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 12px;
+}
+
+.colors {
+    margin-bottom: 16px;
+}
+
+.colors .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.desc {
+    color: #505050;
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.row {
+    display: flex;
+    gap: 24px;
+}
+
+.col {
+    width: 50%;
+}
+
+.col h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #1c2b4f;
+}
+
+.col ul {
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+
+.col ul li {
+    margin-bottom: 6px;
+}
+
+.cert-box {
+    background: #1c2b4f;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 6px;
+}
+
+table td {
+    padding: 8px 4px;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 14px;
+}
+
+table td:first-child {
+    font-weight: bold;
+    width: 60%;
+}
+/* Për pajisje me gjerësi <= 768px (tablet / mobile) */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .product-card {
+        width: 100%; /* zgjero në të gjithë gjerësinë */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .image-section img {
+        width: 100%; /* bëje të responsive */
+        height: auto;
+    }
+
+    .row {
+        flex-direction: column; /* kolona njëra mbi tjetrën */
+        gap: 12px;
+    }
+
+    .col {
+        width: 100%;
+    }
+}
